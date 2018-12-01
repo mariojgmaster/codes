@@ -1,0 +1,88 @@
+* {
+	font-family: "Trebuchet MS", Helvetica, Sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	width: 960px /*720px*/;
+	margin: 0 auto;
+	background: #FFF url(img/coluna.png) repeat-y left top;
+	min-width: 720px;
+	max-width: 960px;
+
+}
+
+#marca {
+	width: 100%; /* Nem precisaria, pois a div, por padrão, ocupa 100% da largura*/
+	height: 200px;
+	background: #9e9e9e url(img/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+/*
+#imagem {
+	width: 90%;
+	overflow: hidden;
+}*/
+
+#conteudo {
+	width: 75% /*520px*/;
+	float: right;
+}
+
+#conteudo-principal {
+	width: 64% /*320px*/;
+	float: left;
+}
+
+img.img-noticia {
+	width: 96%;
+	padding: 2%;
+}
+
+#conteudo-secundario {
+	width: 34% /*180px*/;
+	float: right;
+	background: #D1D1D1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #D1D1D1;
+}
+
+#navegacao,
+#navegacao ul,
+#navegacao ul li,
+#navegacao li a {
+	/*background: #D1D1D1;*/
+	background: none;
+}
+
+
+#navegacao {
+	width: 23% /*180px*/;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navegacao ul {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+
+#rodape {
+	clear: both;
+	padding: 5px;
+	background: #C4C4C4;
+}
