@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+
+		/*
+		*
+		*	@author Mário Jorge
+		*
+		*/
+
+			
+		//Aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário
+
+		//Variaveis
+		var idade = prompt('Digite aqui a sua idade:')
+
+		//Funcao refresh
+		function refresh() {
+			window.location.reload()
+		}
+
+		//Mensagem Principal
+		document.write('<h1>Teste concluído com sucesso!</h1> <br />')
+		document.write('<h2 style="display: inline;">Você é </h2>')
+
+		//Logica
+		if (idade >= 0 && idade < 15) {
+			document.write('<h2 style="display: inline; text-decoration: underline;">Criança</h2>')
+		} else if (idade >= 15 && idade < 30) {
+			document.write('<h2 style="display: inline; text-decoration: underline;">Jovem</h2>')
+		} else if (idade >= 30 && idade < 60) {
+			document.write('<h2 style="display: inline; text-decoration: underline;">Adulto</h2>')
+		} else if (idade >= 60) {
+			document.write('<h2 style="display: inline; text-decoration: underline;">Idoso</h2>')
+		} else {
+			alert('Insira um valor não negativo para idade!')
+			refresh()
+		}
+			
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>
