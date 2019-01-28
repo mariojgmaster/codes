@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" > (Opcional)
+
+			Object.prototype.attr50 = 'z' //cuidado (todos os objetos terão este valor incluido)
+
+			let animal = { attr1: 'a' }
+			let vertebrado = { __proto__: animal, attr2: 'b' }
+			let ave = { __proto__:vertebrado, attr3: 'c', attr2: 'x' } //attr2 de vertebrados ('b') foi sobrescrito ('x')
+
+			console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

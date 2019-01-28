@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" > (Opcional)
+
+			//destructuring
+
+			let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+			//let [ a, b, , c ] = frutas //espaço vazio pula um indice
+			let [ a, b, c = 'Abacate', d, e = 'Banana' ] = frutas
+
+			//console.log(a, b, c, d, e)
+
+			let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+			let [,[,n2]] = coisas
+
+			console.log(n2)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

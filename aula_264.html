@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" > (Opcional)
+
+			//contexto rest
+
+			function soma(...param) {
+				let resultado = 0
+
+				console.log(param)
+
+				param.forEach(v => resultado += v)
+
+				return resultado
+			}
+
+			console.log(soma(3, 8, 5, 7, -8, 10, 115))
+
+			function multiplicacao(m, ...p) {
+				console.log(m)
+				let resultado = 0
+				console.log(p)
+
+				p.forEach(v => resultado += m * v)
+
+				return resultado
+			}
+
+			console.log(multiplicacao(5, 7, 12, 3, 49))
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

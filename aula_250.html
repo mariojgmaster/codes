@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+
+			class Animal {
+				constructor() {
+					this.cor = '' //centímetros
+					this.tamanho = null
+					this.peso = null
+				}
+
+				dormir() {
+					console.log('Dormir')
+				}
+
+			}
+			
+			class Cachorro extends Animal {
+				constructor() {
+					super()
+					this.orelhas = 'Grandes e caídas'
+				}
+
+				correr() {
+					console.log('Correr')
+				}
+
+				rosnar() {
+					console.log('Rosnar')
+				}
+
+			}
+
+			class Passaro extends Animal {
+				constructor() {
+					super()
+					this.bico = 'Curto'
+				}
+
+				voar() {
+					console.log('Voar')
+				}
+
+			}
+
+			class Papagaio extends Passaro {
+				constructor() {
+					super()
+					this.bico = 'Médio'
+					this.sabeFalar = true
+				}
+
+				falar() {
+					console.log('Falar')
+				}
+
+			}
+
+			let cachorro = new Cachorro()
+			let passaro = new Passaro()
+			let papagaio = new Papagaio()
+
+			/*
+			cachorro.dormir()
+			passaro.dormir()
+			papagaio.falar()
+			papagaio.dormir()
+			papagaio.voar()
+			*/
+
+			console.log(cachorro)
+			console.log(passaro)
+			console.log(papagaio)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+			
+			//Software marcenaria
+			//Sofá
+
+			//POO
+
+			class Sofa {
+				constructor(cor, qtde_lugares, reclinavel) {
+					this.cor = cor
+					this.qtde_lugares = qtde_lugares
+					this.reclinavel = reclinavel
+				}
+
+				reclinaSofa() {
+					if (this.reclinavel === true) {
+						console.log('Reclinou')
+					} else {
+						console.log('Não é reclinável')
+					}
+				}
+			}
+
+
+			let sofa = Array()
+
+			sofa.push(new Sofa('Vermelho', 2, true))
+			sofa.push(new Sofa('Azul', 4, false))
+
+			console.log(sofa)
+			
+			sofa[0].reclinaSofa()
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

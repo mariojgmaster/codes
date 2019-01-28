@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+			
+			//modelo da entidade / objeto (objeto = instância do modelo)
+			class ContaBancaria {
+				//agencia
+				//numeroConta
+				//saldo
+				//limite
+				constructor() {
+					this.agencia = 1075
+					this.numeroConta = 8351125
+					this.saldo = 50
+					this.limite = 450
+				}
+
+				depositar(valorDeposito) {
+					this.saldo += valorDeposito
+				}
+
+				sacar(valorSaque) {
+					this.saldo -= valorSaque
+				}
+
+				consultarSaldo() {
+					return this.saldo
+				}
+
+			}
+
+			let x = new ContaBancaria()
+			let y = new ContaBancaria()
+
+			console.log(x.consultarSaldo())
+			x.depositar(450)
+			console.log(x.consultarSaldo())
+			x.sacar(200)
+			console.log(x.consultarSaldo())
+
+			console.log(y.consultarSaldo())
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

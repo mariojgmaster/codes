@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+			
+			function funBack(colorBg1, colorBg2, colorBg3) {
+				//onfocus muda bg para amarelo
+				document.getElementById('entrada_texto').style.background = colorBg1
+
+				var tamanho = document.getElementById('entrada_texto').value.length
+
+				if (tamanho < 3) {
+					document.getElementById('entrada_texto').style.background = colorBg2
+				} else if (tamanho >= 3) {
+					document.getElementById('entrada_texto').style.background = colorBg3
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<input onfocus="funBack('yellow')" onblur="funBack('none', 'red', 'green')" type="text" id="entrada_texto">
+
+	</body>
+
+</html>

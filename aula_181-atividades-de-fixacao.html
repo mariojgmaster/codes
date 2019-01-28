@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+
+		var num1 = prompt('Digite aqui o primeiro número:')
+		var oper = prompt('Digite aqui a operação (Soma / Subtração):')
+		var num2 = prompt('Digite aqui o segundo número:')
+
+		function calculo(num1, num2, oper) {
+			num1 = parseInt(num1)
+			num2 = parseInt(num2)
+
+			if (oper == 'Soma' || oper == 'soma') {
+				return num1 + num2
+			} else if (oper == 'Subtração' || oper == 'Subtracao' || oper == 'subtracao' || oper == 'sub') {
+				return num1 - num2
+			}
+		}
+
+		document.write('O resultado é: ' + calculo(num1, num2, oper))
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

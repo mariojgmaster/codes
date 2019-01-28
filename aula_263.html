@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" > (Opcional)
+
+			//contexto spread
+
+			//string
+			let tituloArtigo = 'Como utilizar o operador rest/spread'
+
+			console.log(tituloArtigo)
+			console.log(...tituloArtigo)
+			console.log([...tituloArtigo])
+
+			//arrays
+			let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular 4']
+			let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux']
+			let listaCursosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+			console.log(listaCursosCompleto)
+
+			//objetos
+			let pessoa = { nome: 'João', idade: 27 }
+			let clone = { endereco: 'Rua ABC', ...pessoa }
+
+			console.log(clone)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

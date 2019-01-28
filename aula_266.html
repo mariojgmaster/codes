@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" > (Opcional)
+
+			let produto = {
+				descricao: 'Notebook',
+				preco: 1800,
+				detalhes: {
+					fabricante: 'ABC',
+					modelo: 'XYZ'
+				}
+			}
+
+			//composição
+			// é um... (descricao, preco)
+			// tem um... (detalhes)
+
+			//token (irá variar)
+			//array => []
+			//objeto => {}
+
+			//let { descricao, preco } = produto
+
+			//let { descricao: d, preco: p } = produto
+
+			//let { descricao: d, preco: p, desconto } = produto
+
+			//let { descricao: d, preco: p = 1000, desconto = 5 } = produto
+
+			let { detalhes: { fabricante: f, modelo: m = 'Não informado' } } = produto
+			console.log(f, m)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

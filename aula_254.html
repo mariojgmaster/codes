@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+
+			let nome = 'Mário' //document.getElementById('nome').value
+			let idade = 22
+			let sexo = 'Masculino'
+			let profissao = 'Programador'
+
+			let objeto = {
+				nome: nome,
+				idade: idade,
+				sexo: sexo,
+				profissao: profissao,
+				exibirResumo: function() {
+					console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+				}
+			}
+
+			console.log(objeto)
+			objeto.exibirResumo()
+
+			let objeto2 = {
+				nomeTeste: nome, // nome = nome variavel / valor = valor da variavel
+				idade,
+				sexo,
+				profissao,
+				exibirResumo() {
+					console.log(`${this.nomeTeste}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+				}
+			}
+
+			console.log(objeto2)
+			objeto2.exibirResumo()
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

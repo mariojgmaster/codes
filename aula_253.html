@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+
+			class Produto {
+				constructor(descricao, preco) {
+					this.descricao = descricao
+					this.preco = preco
+				}
+
+				verDescricao() {
+					console.log(`${this.descricao} por apenas ${this.preco}!`)
+				}
+
+			}
+
+			let produto = new Produto('Notebook', 2200)
+			produto.verDescricao()
+
+			//--------------------------------------------------
+
+			let produtoLiteral = {
+				descricao: 'Geladeira',
+				preco: 1800,
+				verDescricao: function() {
+					console.log(`${this.descricao} por apenas ${this.preco}!`)
+				}
+			}
+
+			produtoLiteral.verDescricao()
+
+			//----------------------------------------------------
+
+			/*
+			formulário -> servidor
+				recupera dados e monta um objeto literal
+					obj literal -> JSON -> HTTP -> Server -> Armazena
+			*/
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

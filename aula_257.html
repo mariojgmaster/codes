@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<!-- Esta é a aula em que todos os conceitos iniciais de Paradigma de Orientação a Objetos são passados -->
+
+		<meta charset="utf-8">
+		<title>ES6</title>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+		<script>
+			//lembrar de pôr o < type="text/babel" >
+
+			let assinatura = {
+				idCliente: 1000,
+				descricao: 'Acesso a internet',
+				status() {
+					console.log('Ativo')
+				}
+			}
+
+			console.log(assinatura.descricao)
+
+			let y = assinatura
+
+			console.log(y.descricao)
+
+			///
+
+			y.descricao = 'Internet + tv + telefone'
+
+			console.log(assinatura.descricao)
+			console.log(y.descricao)
+
+		</script>
+
+	</head>
+
+	<body>
+
+		
+
+	</body>
+
+</html>

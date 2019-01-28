@@ -1,0 +1,54 @@
+<html>
+	<head>
+    <meta charset="utf-8">
+		<title>JavaScript</title>
+
+    <script>
+      
+      var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+      function inpText() {
+        //Recupera valor inserido no campo texto
+        var addValue = document.getElementById('texto').value
+        
+        //Caso não possua algum valor preenchido, entra no if
+        if (addValue == '') {
+          alert('Informe um valor válido!')
+        } 
+
+        //Caso possua algum valor preenchido, entra no else if
+
+        //Gera um alert, caso valor já esteja contido no Array objetos
+        else if (objetos.indexOf(addValue) !== -1) {
+          alert('Objeto já adicionado!')
+
+        //Adiciona valor, caso valor não esteja contido no Array objetos
+        //Gera checagem de valores no Array via console
+        //Limpa campo texto
+        } else if (objetos.indexOf(addValue) == -1) {
+          objetos.push(addValue)
+          console.log(objetos)
+          document.getElementById('texto').value = ''
+        }
+      }
+
+      //Ordena valores contidos no Array objetos
+      function sortObj() {
+        objetos.sort()
+        console.log(objetos)
+      }
+
+    </script>
+	</head>
+
+  <body>
+
+    <form>
+      <input id="texto" type="text"/>
+      <button onclick="inpText()" id="add" type="button">Adicionar</button>
+      <button onclick="sortObj()" id="sort" type="button">Ordenar</button>
+    </form>
+
+  </body>	
+
+</html>
